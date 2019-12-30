@@ -1,17 +1,14 @@
 <template>
   <div id="app">
-    <HelloWorld />
+    <div class="nav">
+      <router-link to="/">Spacer</router-link>
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view />
   </div>
 </template>
 <script>
-import HelloWorld from './components/HelloWorld.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
-};
 </script>
 <style lang="scss" scoped>
 
